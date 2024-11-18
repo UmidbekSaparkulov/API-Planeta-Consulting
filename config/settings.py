@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 
     # local apps
-    'education',
+    'educationSchool',
 
 
 

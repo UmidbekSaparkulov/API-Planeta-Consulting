@@ -1,5 +1,6 @@
+from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
-from .models import Country, Program, Students_Registratsion
+from .models import Country, Program, StudentRegistratsion
 from .serializers import CountrySerializer, ProgramSerializer, StudentSerializer
 
 class CountryViewSet(ModelViewSet):
@@ -11,5 +12,6 @@ class ProgramViewSet(ModelViewSet):
     serializer_class = ProgramSerializer
 
 class StudentsRegistrationViewSet(ModelViewSet):
-    queryset = Students_Registratsion.objects.all()
+    queryset = StudentRegistratsion.objects.all()
     serializer_class = StudentSerializer
+
